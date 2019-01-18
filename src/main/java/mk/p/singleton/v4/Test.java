@@ -3,7 +3,6 @@ package mk.p.singleton.v4;
 /**
  * Inner class
  */
-
 public class Test {
     public static void main(String[] args) {
         MySingleton firsInstance = MySingleton.getInstance();

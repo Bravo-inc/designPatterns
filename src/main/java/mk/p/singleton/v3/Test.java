@@ -3,7 +3,6 @@ package mk.p.singleton.v3;
 /**
  * Fast initialization
  */
-
 public class Test {
     public static void main(String[] args) {
         MySingleton firstInstance = MySingleton.getInstance();
