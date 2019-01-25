@@ -1,7 +1,7 @@
 package mk.p.factory;
 
 public class CarFactory {
-    private int sedanCarCout = 0;
+    private int sedanCarCount = 0;
     private int crossoverCarCount = 0;
     private int vanCarCount = 0;
 
@@ -9,7 +9,7 @@ public class CarFactory {
         CarBuild toReturn = null;
         switch (types) {
             case SEDAN:
-                sedanCarCout++;
+                sedanCarCount++;
                 toReturn = new Sedan();
                 break;
             case CROSSOVER:
@@ -27,9 +27,9 @@ public class CarFactory {
     }
 
     public void printCount() {
-        System.out.println("Sedan: " + sedanCarCout);
+        System.out.println("Sedan: " + sedanCarCount);
         System.out.println("Crossover: " + crossoverCarCount);
         System.out.println("Van: " + vanCarCount);
-        System.out.println("Total: " + (sedanCarCout + crossoverCarCount + vanCarCount));
+        System.out.println("Total: " + (sedanCarCount + crossoverCarCount + vanCarCount));
     }
 }
