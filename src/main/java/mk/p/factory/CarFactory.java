@@ -5,9 +5,9 @@ public class CarFactory {
     private int crossoverCarCount = 0;
     private int vanCarCount = 0;
 
-    public CarBuild getCarType(CarTypes types) {
+    public CarBuild getCarType(CarType type) {
         CarBuild toReturn = null;
-        switch (types) {
+        switch (type) {
             case SEDAN:
                 sedanCarCount++;
                 toReturn = new Sedan();
@@ -21,7 +21,7 @@ public class CarFactory {
                 toReturn = new Van();
                 break;
             default:
-                throw new IllegalArgumentException("Wrong car types:" + types);
+                throw new IllegalArgumentException("Wrong car types:" + type);
         }
         return toReturn;
     }
