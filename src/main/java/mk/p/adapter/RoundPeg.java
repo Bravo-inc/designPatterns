@@ -4,7 +4,7 @@ package mk.p.adapter;
  * Round Pegs are compatible with Round Holes.
  */
 public class RoundPeg {
-    private double radius;
+    private  double radius;
 
     public RoundPeg() {
     }
