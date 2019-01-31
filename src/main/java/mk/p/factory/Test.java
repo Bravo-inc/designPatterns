@@ -19,7 +19,7 @@ public class Test {
 
     private static CarBuild getRandomCar(CarFactory factory) {
         Random random = new Random();
-        CarTypes types = CarTypes.values()[random.nextInt(CarTypes.values().length)];
-        return (factory.getCarType(types));
+        CarType type = CarType.values()[random.nextInt(CarType.values().length)];
+        return (factory.getCarType(type));
     }
 }

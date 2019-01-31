@@ -1,6 +1,6 @@
 package mk.p.factory;
 
-public enum CarTypes {
+public enum CarType {
     SEDAN,
     CROSSOVER,
     VAN
