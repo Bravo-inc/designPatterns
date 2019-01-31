@@ -2,6 +2,7 @@ package mk.p.adapter;
 
 /**
  * The adapter allows you to use Square Taps and Round Holes together.
+ *
  */
 public class SquarePegAdapter extends RoundPeg {
     private SquarePeg peg;
