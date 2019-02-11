@@ -1,5 +1,7 @@
 package mk.p.command;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class CutCommand extends Command {
     public CutCommand(Editor editor) {
         super(editor);
@@ -7,7 +9,7 @@ public class CutCommand extends Command {
 
     @Override
     public boolean execute() {
-        if (editor.textField.getSelectedText().isEmpty()) return false;
+        if (StringUtils.isBlank(editor.textField.getSelectedText())) return false;
         backup();
         String source = editor.textField.getText();
         editor.clipboard = editor.textField.getSelectedText();
