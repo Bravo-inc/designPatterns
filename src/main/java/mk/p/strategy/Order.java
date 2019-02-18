@@ -6,7 +6,7 @@ public class Order {
 
     public void processOrder(PayStrategy strategy) {
         strategy.collectPaymentDetails();
-        //Here we can be takes and save payment data from strategy
+        //Here we would take away and save pay data from strategy
     }
 
     public void setTotalCost(int cost) {
